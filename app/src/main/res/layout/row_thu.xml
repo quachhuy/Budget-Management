@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/myBackground"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/img_thu"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_money" />
+
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:paddingLeft="8dp">
+
+            <TextView
+                android:id="@+id/nameThu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Khoản thu: "
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/sotienThu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Số tiền:"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/ngayThu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ngày thu:"
+                android:textColor="#000"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/update_Thu"
+            android:layout_width="36dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_baseline_create_24" />
+
+        <ImageView
+            android:id="@+id/delete_Thu"
+            android:layout_width="36dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="7dp"
+            android:src="@drawable/ic_baseline_delete_24" />
+    </LinearLayout>
+
+</LinearLayout>

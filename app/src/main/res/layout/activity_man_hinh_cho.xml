@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManHinhCho">
+
+    <ImageView
+        android:background="#52926D"
+        android:src="@drawable/mhc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_mhc"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="#FFFF00"
+        android:text="Quản Lý Chi Tiêu "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</FrameLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DuAn1Nhom2</string>
+    <string name="title_khoanthu">Khoản Thu</string>
+    <string name="title_khoanchi">Khoản Chi</string>
+    <string name="title_thongke">Thống Kê</string>
+    <string name="title_goiy">Gợi Ý</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

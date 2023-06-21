@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_khoanthu">
+
+    <fragment
+        android:id="@+id/navigation_khoanthu"
+        android:name="com.example.duan1nhom2.ui.KhoanThuFragment"
+        android:label="@string/title_khoanthu"
+        tools:layout="@layout/fragment_khoan_thu" />
+
+    <fragment
+        android:id="@+id/navigation_khoanchi"
+        android:name="com.example.duan1nhom2.ui.KhoanChiFragment"
+        android:label="@string/title_khoanchi"
+        tools:layout="@layout/fragment_khoan_chi" />
+
+    <fragment
+        android:id="@+id/navigation_thongke"
+        android:name="com.example.duan1nhom2.ui.ThongKeFragment"
+        android:label="@string/title_thongke"
+        tools:layout="@layout/fragment_thong_ke" />
+</navigation>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_khoanthu"
+        android:icon="@drawable/khoanthu"
+        android:title="@string/title_khoanthu" />
+
+    <item
+        android:id="@+id/navigation_khoanchi"
+        android:icon="@drawable/chi"
+        android:title="@string/title_khoanchi" />
+
+    <item
+        android:id="@+id/navigation_thongke"
+        android:icon="@drawable/thongke"
+        android:title="@string/title_thongke" />
+
+</menu>
