@@ -18,7 +18,7 @@
         </activity>
         <activity
             android:name=".LoginActivity"
-            android:label="Quản Lý Chi Tiêu">
+            android:label="Quản Lý Chi Tiêu - Nhóm 2">
         </activity>
         <activity
             android:name=".ListNguoiDungActivity"
