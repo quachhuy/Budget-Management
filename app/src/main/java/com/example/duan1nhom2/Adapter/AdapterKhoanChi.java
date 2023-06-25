@@ -3,7 +3,6 @@ package com.example.duan1nhom2.Adapter;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.text.Editable;
 import android.text.TextWatcher;

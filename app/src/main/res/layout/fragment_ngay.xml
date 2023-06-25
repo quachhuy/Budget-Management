@@ -9,17 +9,17 @@
     android:background="@drawable/money">
 
     <LinearLayout
-        android:gravity="center_horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="71dp"
         android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
         android:orientation="horizontal">
 
         <TextView
             android:id="@+id/tv_thongke_ngay"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:text="Chọn ngày:"
+            android:hint="Ngày: "
             android:textColor="#000"
             android:textSize="24sp" />
 
@@ -49,9 +49,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:background="@color/colorPrimary"
+        android:background="#fff"
         android:text=""
-        android:textColor="#fff"
+        android:textColor="#4CAF50"
         android:textSize="24sp" />
 
     <TextView
@@ -69,9 +69,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:background="@color/colorPrimary"
+        android:background="#fff"
         android:text=""
-        android:textColor="#fff"
+        android:textColor="#E91E1E"
         android:textSize="24sp" />
 
     <TextView
@@ -79,7 +79,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="Tích lũy:"
+        android:text="Tiết kiệm:"
         android:textColor="#000"
         android:textSize="24sp"
         android:visibility="invisible" />
@@ -89,9 +89,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:background="@color/colorPrimary"
+        android:background="#fff"
         android:text=""
-        android:textColor="#fff"
+        android:textColor="#4CAF50"
         android:textSize="24sp" />
     >
 </LinearLayout>

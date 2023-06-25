@@ -9,10 +9,10 @@
     tools:context=".ui.NgayFragment">
 
     <LinearLayout
-        android:gravity="center_horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="81dp"
         android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
         android:orientation="horizontal">
 
         <EditText
