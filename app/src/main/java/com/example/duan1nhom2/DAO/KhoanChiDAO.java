@@ -7,7 +7,6 @@ import android.util.Log;
 
 import com.example.duan1nhom2.DataBase.DataBase;
 import com.example.duan1nhom2.Model.KhoanChi;
-import com.example.duan1nhom2.Model.KhoanThu;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

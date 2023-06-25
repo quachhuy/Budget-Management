@@ -50,9 +50,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:background="@color/colorPrimary"
+        android:background="#fff"
         android:text=""
-        android:textColor="#fff"
+        android:textColor="#4CAF50"
         android:textSize="24sp" />
 
     <TextView
@@ -70,9 +70,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:background="@color/colorPrimary"
+        android:background="#fff"
         android:text=""
-        android:textColor="#fff"
+        android:textColor="#E91E1E"
         android:textSize="24sp" />
 
     <TextView
@@ -90,9 +90,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:background="@color/colorPrimary"
+        android:background="#fff"
         android:text=""
-        android:textColor="#fff"
+        android:textColor="#4CAF50"
         android:textSize="24sp" />
     >
 </LinearLayout>
