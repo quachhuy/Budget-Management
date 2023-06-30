@@ -19,7 +19,7 @@ import android.widget.Toast;
 
 import com.example.duan1nhom2.DAO.KhoanChiDAO;
 import com.example.duan1nhom2.DataBase.DataBase;
-import com.example.duan1nhom2.Model.KhoanChi;
+import com.example.duan1nhom2.ui.Model.KhoanChi;
 import com.example.duan1nhom2.R;
 import com.google.android.material.textfield.TextInputLayout;
 

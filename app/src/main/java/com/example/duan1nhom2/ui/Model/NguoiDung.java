@@ -1,4 +1,4 @@
-package com.example.duan1nhom2.Model;
+package com.example.duan1nhom2.ui.Model;
 
 public class NguoiDung {
     private String Username;

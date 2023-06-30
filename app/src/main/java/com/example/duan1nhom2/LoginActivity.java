@@ -17,7 +17,7 @@ import android.widget.Toast;
 import com.example.duan1nhom2.Adapter.AdapterNguoiDung;
 import com.example.duan1nhom2.DAO.NguoiDungDAO;
 import com.example.duan1nhom2.DataBase.DataBase;
-import com.example.duan1nhom2.Model.NguoiDung;
+import com.example.duan1nhom2.ui.Model.NguoiDung;
 
 import java.util.List;
 
@@ -26,8 +26,6 @@ public class LoginActivity extends AppCompatActivity {
 
     EditText edt_user, edt_pass;
     CheckBox remember;
-    AdapterNguoiDung adapterNguoiDung;
-    List<NguoiDung> nguoiDungs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +35,7 @@ public class LoginActivity extends AppCompatActivity {
         edt_pass = findViewById(R.id.edt_pass);
         remember = findViewById(R.id.rememberLogin);
         loadLogin();
+//        khôi phục thông tin đăng nhập khi ứng dụng được mở lại sau khi đã đóng hoặc chuyển đổi Activity
     }
 
     public void rememberLogin(String user, String pass, boolean check) {
@@ -58,28 +57,23 @@ public class LoginActivity extends AppCompatActivity {
         boolean remem = remember.isChecked();
         DataBase dataBase = new DataBase(LoginActivity.this);
         NguoiDungDAO nguoiDungDAO = new NguoiDungDAO(dataBase);
-        List<NguoiDung> nguoiDungs = nguoiDungDAO.getAllND();
+        List<NguoiDung> nguoiDung = nguoiDungDAO.getAllND();
         if (user.isEmpty() || pass.isEmpty()) {
-            Toast.makeText(LoginActivity.this, "Không được để trống", Toast.LENGTH_SHORT).show();
+            Toast.makeText(LoginActivity.this, "Không được để trống Tài khoản và Mật khẩu!", Toast.LENGTH_SHORT).show();
         } else {
-            if (user.equalsIgnoreCase(nguoiDungs.get(0).getUsername()) && pass.equalsIgnoreCase(nguoiDungs.get(0).getPassword())) {
+            if (user.equalsIgnoreCase(nguoiDung.get(0).getUsername()) && pass.equals(nguoiDung.get(0).getPassword())) {
                 rememberLogin(user, pass, remem);
                 Toast.makeText(LoginActivity.this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                 startActivity(intent);
             } else {
-                if (user.equals(nguoiDungs.get(0).getUsername()) && pass.equals(nguoiDungs.get(0).getPassword())) {
-                    Toast.makeText(LoginActivity.this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                    startActivity(intent);
-                } else {
-                    Toast.makeText(this, "Tài Khoản Mật Khẩu Không Đúng", Toast.LENGTH_SHORT).show();
-                }
+                Toast.makeText(LoginActivity.this, "Tài Khoản Mật Khẩu Không Đúng", Toast.LENGTH_SHORT).show();
             }
         }
     }
 
-    public void signUp(View view) {
+
+        public void signUp(View view) {
         final AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
         View view1 = LayoutInflater.from(this).inflate(R.layout.add_taikhoan, null);
         builder.setView(view1);
@@ -104,7 +98,6 @@ public class LoginActivity extends AppCompatActivity {
                     dataBase = new DataBase(LoginActivity.this);
                     nguoiDungDAO = new NguoiDungDAO(dataBase);
                     long value = nguoiDungDAO.insertNguoiDung(nguoiDung);
-                    Log.e("thien",value + "");
                     if (value > 0) {
                         Toast.makeText(LoginActivity.this, "Thêm thành công", Toast.LENGTH_SHORT).show();
                     } else {

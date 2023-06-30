@@ -34,7 +34,6 @@ public class NgayFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_ngay, container, false);
         tv_thongke_ngay = view.findViewById(R.id.tv_thongke_ngay);
         tv_thu_ngay = view.findViewById(R.id.tv_thu_ngay);

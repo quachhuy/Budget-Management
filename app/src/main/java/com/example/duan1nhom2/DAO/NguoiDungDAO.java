@@ -4,10 +4,9 @@ package com.example.duan1nhom2.DAO;
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.util.Log;
 
 import com.example.duan1nhom2.DataBase.DataBase;
-import com.example.duan1nhom2.Model.NguoiDung;
+import com.example.duan1nhom2.ui.Model.NguoiDung;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,7 +36,7 @@ public class NguoiDungDAO {
         contentValues.put(COLUMN_EMAIL, nguoiDung.getEmail());
         contentValues.put(COLUMN_FULLNAME, nguoiDung.getFullname());
 
-        return sqLiteDatabase.insert(TABLE_NAME, null, contentValues);
+        return sqLiteDatabase.insert(TABLE_NAME,null, contentValues);
     }
 
     public long updateNguoiDung(NguoiDung nguoiDung) {
@@ -53,10 +52,6 @@ public class NguoiDungDAO {
         return sqLiteDatabase.update(TABLE_NAME, contentValues, COLUMN_USERNAME + "=?", new String[]{nguoiDung.getUsername()});
     }
 
-    public long deleteNguoiDung(String userName) {
-        SQLiteDatabase sqLiteDatabase = dataBase.getWritableDatabase();
-        return sqLiteDatabase.delete(TABLE_NAME, COLUMN_USERNAME + "=?", new String[]{userName});
-    }
 
     public List<NguoiDung> getAllND() {
         SQLiteDatabase sqLiteDatabase = dataBase.getReadableDatabase();

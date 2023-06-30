@@ -2,7 +2,6 @@ package com.example.duan1nhom2.Adapter;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -15,13 +14,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 
-import androidx.recyclerview.widget.RecyclerView;
-
-import com.example.duan1nhom2.DAO.KhoanThuDAO;
 import com.example.duan1nhom2.DAO.NguoiDungDAO;
 import com.example.duan1nhom2.DataBase.DataBase;
-import com.example.duan1nhom2.Model.KhoanThu;
-import com.example.duan1nhom2.Model.NguoiDung;
+import com.example.duan1nhom2.ui.Model.NguoiDung;
 import com.example.duan1nhom2.R;
 import com.google.android.material.textfield.TextInputLayout;
 
@@ -29,7 +24,7 @@ import java.util.List;
 
 public class AdapterNguoiDung extends BaseAdapter {
     Activity context;
-    List<NguoiDung> nguoiDungList;
+    List<NguoiDung> nguoiDungList; // tạo danh sách chứa các đối tượng NguoiDung
     DataBase dataBase;
     NguoiDungDAO nguoiDungDAO;
 

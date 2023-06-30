@@ -21,6 +21,6 @@ public class ManHinhCho extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), LoginActivity.class));
                 finish();
             }
-        }, 2000);
+        }, 2500);
     }
 }

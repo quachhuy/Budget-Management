@@ -10,7 +10,6 @@ import androidx.fragment.app.Fragment;
 
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,7 +24,7 @@ import com.example.duan1nhom2.Adapter.AdapterKhoanChi;
 import com.example.duan1nhom2.DAO.KhoanChiDAO;
 import com.example.duan1nhom2.DAO.KhoanThuDAO;
 import com.example.duan1nhom2.DataBase.DataBase;
-import com.example.duan1nhom2.Model.KhoanChi;
+import com.example.duan1nhom2.ui.Model.KhoanChi;
 import com.example.duan1nhom2.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.textfield.TextInputLayout;

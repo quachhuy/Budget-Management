@@ -1,6 +1,5 @@
 package com.example.duan1nhom2;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ListView;
 
@@ -10,9 +9,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.duan1nhom2.Adapter.AdapterNguoiDung;
 import com.example.duan1nhom2.DAO.NguoiDungDAO;
 import com.example.duan1nhom2.DataBase.DataBase;
-import com.example.duan1nhom2.Model.NguoiDung;
+import com.example.duan1nhom2.ui.Model.NguoiDung;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class ListNguoiDungActivity extends AppCompatActivity {
